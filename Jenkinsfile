@@ -21,6 +21,12 @@ pipeline{
                 git branch: 'main',credentialsId: 'github', url: 'https://github.com/SalindaGunarathna/Jenkins-Pipeline02-Spring-Boot-project'
             }
         }
+
+        stage('Build'){
+            steps{
+                sh 'mvn clean install'
+            }
+        }
     }
 
 }
