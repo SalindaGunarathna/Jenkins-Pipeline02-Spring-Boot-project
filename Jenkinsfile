@@ -13,7 +13,7 @@ pipeline{
         DOCKER_USER = "salindadocker"
         DOCKER_PASS = "dockerhub"
         IMAGE_NAME = "${DOCKER_USER}/pipeline-springboot:${RELEASE}"
-        IMAGE_TAG = "${RELEASE} - ${BUILD_NUMBER}"
+        IMAGE_TAG = "v1_0_0"
     }
 
     stages{
@@ -56,5 +56,6 @@ pipeline{
             }
         }
     }
+   
 
 }
