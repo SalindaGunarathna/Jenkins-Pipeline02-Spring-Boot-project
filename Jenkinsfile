@@ -7,7 +7,7 @@ pipeline{
         jdk 'Java17'
         maven "Maven3"
     }
-    environmnent{
+    environment{
         APP_NAME = "Jenkins-Pipeline02-Spring-Boot-project"
         RELEASE = "1.0.0"
         DOCKER_USER = "salindadocker"
