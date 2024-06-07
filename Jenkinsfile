@@ -12,7 +12,7 @@ pipeline{
         RELEASE = "1.0.0"
         DOCKER_USER = "salindadocker"
         DOCKER_PASS = "dockerhub"
-        IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}:${RELEASE}"
+        IMAGE_NAME = "${DOCKER_USER}/pipeline-springboot:${RELEASE}"
         IMAGE_TAG = "${RELEASE} - ${BUILD_NUMBER}"
     }
 
